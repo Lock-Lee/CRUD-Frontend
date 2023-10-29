@@ -1,0 +1,34 @@
+
+
+<div class="card">
+    <h1 class="card-header">Update User</h1>
+    <div class="card-body">
+      
+       <br>
+       <form  (ngSubmit)="onSubmit()" [formGroup]="checkoutForm">
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text"   class="form-control" id="username" name="username"  formControlName="username">
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="text"   class="form-control" id="password"  formControlName="password">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email"  formControlName="email">
+        </div>
+        <div class="form-group" style="display: flex; justify-content: end;">
+            <a routerLink="/home"><button type="button" class="btn btn-primary">Back</button></a>&nbsp;
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+     
+      </form>
+
+     <div>
+       
+     </div>
+    </div>
+  </div>
+  
+  
